@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Smythe&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Layout */
+.hero-intro,
+main,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-intro {
+    background-image: url(images/lightbbq.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0em 2em;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+main {
+    padding: 1em 1.75em;
+}
+.webinar {
+    margin-bottom: 1.5em;
+}
+
+input {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 0;
+    border: 2px solid #c0c1c6;;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background: linear-gradient(to right,#ee9751de,#ec6a00);
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+form,
+.small-txt {
+    max-width: 450px;
+}
+
+/* typography */
+.head-text,
+.reg-tdy {
+    color: #f48226;
+}
+
+.head-text {
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-shadow: 5px 2px 5px #000;
+}
+
+.webinar,
+.mouth {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #000;
+    font-size: 1rem;
+}
+
+.bold-text,
+.reg-tdy {
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 0;
+}
+
+.reg-tdy {
+    text-transform: uppercase;
+}
+
+.mouth {
+    order: -1;
+    border-top: 5px solid #fff;
+    font-size: 0.55rem;
+    margin-top: 0;
+}
+
+.small-txt {
+    font-weight: 600;
+    font-size: 0.87rem;
+    color: #6e7080;
+    margin-top: 2em;
+}
+
+input {
+    font-weight: 600;
+    color: #6e7080;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f48226;
+}
+
+.tiny-txt {
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #6e7080;
+}
+
+button {
+    padding: 0.5em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-family: inherit;
+    width: 100%;
+}
+
+
+@media (min-width: 576px){
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-intro,
+    main {
+        flex: 1;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    .hero-intro {
+        height: 100vh;
+        padding: 0 3.5em;
+    }
+
+    .webinar {
+        font-size: 2rem;
+    }
+
+    .head-text {
+        font-size: 3rem;
+    }
+
+    .mouth {
+        font-size: 0.77rem;
+    }
+}
